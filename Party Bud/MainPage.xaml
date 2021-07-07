@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Party_Bud.MainPage"
+             BackgroundColor="#404040">
+
+    <StackLayout>
+        <Label HorizontalTextAlignment="Center" FontSize="110" FontAttributes="Bold"  Padding="16" TextColor="White" FontFamily="FunFont">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Party " TextColor="#397B90"/>
+                    <Span Text="Bud"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Grid VerticalOptions="StartAndExpand">
+            <Image Source="main.png" Aspect="AspectFit" />
+            <Label Text="> Press any button to Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
+        </Grid>
+
+        <!-- 
+        <RelativeLayout HorizontalOptions="Center">
+            <Image Source="main.png" />
+            <Label Text="Pick a Game to start" FontSize="Title" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="32" TextColor="White"/>
+        </RelativeLayout>
+        -->
+
+
+
+        <Button Margin="48, 32, 48, 8" Text="Hvem er ..." Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White"></Button>
+        <Button Margin="48, 8, 48, 48" Text="Nøtt eller Sannhet" Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White"></Button>
+        
+
+    </StackLayout>
+
+</ContentPage>
