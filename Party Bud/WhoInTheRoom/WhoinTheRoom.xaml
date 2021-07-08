@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Party_Bud.Who_in_The_Room"
+             Title="Hvem i rommet"
+             BackgroundColor="#404040">
+
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Example Item"
+                 Order="Primary"
+                 Priority="0" />
+    </ContentPage.ToolbarItems> -->
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hvem" FontSize="72" FontAttributes="Bold"  Padding="32, 8, 32, 16" TextColor="White" FontFamily="FunFont"/>
+
+            <Grid VerticalOptions="StartAndExpand" Padding="24, 0, 24, 0">
+                <BoxView Color="#397B90" CornerRadius="24"></BoxView>
+                <Label x:Name="question_text" Text="er mest sannsynlig å drepe noen ved et uhell?" Padding="32" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="48" FontFamily="FunFont"/>
+            </Grid>
+
+            <Button Margin="72, 16, 72, 32" Clicked="New_Question" Text="Neste" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

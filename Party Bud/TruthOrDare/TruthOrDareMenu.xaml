@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Party_Bud.TruthOrDare.TruthOrDareMenu"
+             BackgroundColor="#404040"
+             Title="Nødt eller Sannhet - Meny">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Nødt eller Sannhet" FontSize="64" FontAttributes="Bold"  Padding="32, 32, 32, 8" TextColor="White" FontFamily="FunFont"/>
+                <Label FontSize="36" FontAttributes="Bold" Padding="32, 8, 32, 16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Alle spillerne sitter i en sirkel og den første snur en flaske i midten, den Flaskehalsen peker på blir stilt spørsmålet: Nødt eller sannhet? " TextColor="#54CAE3"/>
+                            <Span Text="(Blånekt er med)" TextColor="White"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Margin="72, 16, 72, 32" Text="Start" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Start_Game"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
