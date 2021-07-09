@@ -30,31 +30,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="WhoInTheRoom\WhoinTheRoom.xaml.cs">
-      <DependentUpon>WhoinTheRoom.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="IHaveNever\IHaveNever.xaml">
+    <EmbeddedResource Update="GameMenu\GameMenu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="IHaveNever\IHaveNeverMenu.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Themes\LightTheme.xaml">
+    <EmbeddedResource Update="GameScreen\GameScreen.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="TruthOrDare\TruthOrDare.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="TruthOrDare\TruthOrDareMenu.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="WhoInTheRoom\WhoinTheRoom.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="WhoInTheRoom\WhoInTheRoom2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

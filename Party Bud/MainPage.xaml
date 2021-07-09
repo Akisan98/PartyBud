@@ -22,7 +22,7 @@
 
             <Button Margin="48, 92, 48, 8" Text="Jeg har aldri..." Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Open_Never_Have_I"></Button>
             <Button Margin="48, 8, 48, 8" Text="Hvem i rommet" Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Open_Who_In_The_Room"></Button>
-            <Button Margin="48, 8, 48, 8" Text="Vil du heller?" Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White"></Button>
+            <Button Margin="48, 8, 48, 8" Text="Vil du heller?" Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Open_Would_You_Rather"></Button>
             <Button Margin="48, 8, 48, 48" Text="Nøtt eller Sannhet" Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Open_Truth_Or_Dare"></Button>
 
         </StackLayout>
