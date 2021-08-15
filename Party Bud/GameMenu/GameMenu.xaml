@@ -5,10 +5,12 @@
              BackgroundColor="#404040"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="GameName" Text="Jeg har aldri..." FontSize="64" FontAttributes="Bold"  Padding="32, 32, 32, 8" TextColor="White" FontFamily="FunFont"/>
-            <Label x:Name="GameDescription" Text="Den eldste spilleren starter med et utsagn, hvis folk har gjort det drikker dem, om ingen har drikker personen som leste." FontSize="36" FontAttributes="Bold"  Padding="32, 32, 32, 48" TextColor="#54CAE3"/>
-            <Button Margin="72, 16, 72, 32" Text="Start" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" VerticalOptions="EndAndExpand" Clicked="Start_Game"></Button>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="GameName" Text="Jeg har aldri..." FontSize="64" FontAttributes="Bold"  Padding="32, 32, 32, 8" TextColor="White" FontFamily="FunFont"/>
+                <Label x:Name="GameDescription" Text="Den eldste spilleren starter med et utsagn, hvis folk har gjort det drikker dem, om ingen har drikker personen som leste." FontSize="36" FontAttributes="Bold"  Padding="32, 32, 32, 48" TextColor="#54CAE3"/>
+                <Button Margin="72, 16, 72, 32" Text="Start" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" VerticalOptions="EndAndExpand" Clicked="Start_Game"></Button>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
