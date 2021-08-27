@@ -17,7 +17,7 @@
 
             <Grid VerticalOptions="StartAndExpand">
                 <Image Source="main.png" Aspect="AspectFit" />
-                <Label Text="> Press any button to Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
+                <Label Text="En drikkelek for alle! En lek for enhver stemning!" Padding="16,0,16,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
             </Grid>
 
             <Button Margin="48, 92, 48, 8" Text="Jeg har aldri..." Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Open_Never_Have_I"></Button>

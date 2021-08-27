@@ -12,6 +12,8 @@ namespace Party_Bud.GameScreen
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GameScreen : ContentPage
     {
+        private readonly Random _random = new Random();
+
         int gameID;
         string[] questions;
         int counter;
@@ -57,8 +59,13 @@ namespace Party_Bud.GameScreen
             counter = 1;
         }
 
-        void Next_Question(object sender, EventArgs e)
+        async void Next_Question(object sender, EventArgs e)
         {
+            if (_random.Next(6) == 2)
+            {
+                await Navigation.PushAsync(new ToastScreen());
+            }
+
             question_text.Text = questions[counter];
             counter++;
         }

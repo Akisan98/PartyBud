@@ -13,6 +13,8 @@ namespace Party_Bud
             InitializeComponent();
         }
 
+        //TODO: Ny Knapper på Hjemskjermen med bakgrunnsbilde
+
         async void Open_Who_In_The_Room(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new GameMenu.GameMenu(1));

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Party_Bud.ToastScreen"
+             BackgroundColor="#404040">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <ContentView>
+                <StackLayout>
+                    <Label Text="Skål" FontSize="72" FontAttributes="Bold"  Padding="32, 8, 32, 16" TextColor="#54CAE3" FontFamily="FunFont"/>
+
+                    <Label x:Name="emoji_to_display" Text="🍻" Padding="32, 32, 32, 8" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="160" FontFamily="FunFont"/>
+                    <Label x:Name="call_to_action" Text="Alle tar en slurk" Padding="32, 8, 32, 32" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="48" FontFamily="FunFont"/>
+
+
+                    
+                    <Grid>
+                        <Button Margin="72, 16, 72, 32" Text="Fortsett" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="GoBack" VerticalOptions="End"></Button>
+                    </Grid>
+
+                </StackLayout>
+            </ContentView>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

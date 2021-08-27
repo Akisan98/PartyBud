@@ -12,6 +12,8 @@ namespace Party_Bud.TruthOrDare
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TruthOrDare : ContentPage
     {
+        private readonly Random _random = new Random();
+
         string[] dares;
         string[] truths;
         int counterD;
@@ -34,15 +36,25 @@ namespace Party_Bud.TruthOrDare
             counterT = 0;
         }
 
-        void DareQuestion(object sender, EventArgs e)
+        async void DareQuestion(object sender, EventArgs e)
         {
+            if (_random.Next(8) == 2)
+            {
+                await Navigation.PushAsync(new ToastScreen());
+            }
+
             overskrift.Text = "Nødt";
             question_text.Text = dares[counterD];
             counterD++;
         }
 
-        void TruthQuestion(object sender, EventArgs e) 
+        async void TruthQuestion(object sender, EventArgs e) 
         {
+            if (_random.Next(8) == 2)
+            {
+                await Navigation.PushAsync(new ToastScreen());
+            }
+
             overskrift.Text = "Sannhet";
             question_text.Text = truths[counterT];
             counterT++;
