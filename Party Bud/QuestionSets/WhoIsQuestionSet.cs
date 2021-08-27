@@ -526,7 +526,6 @@ namespace Party_Bud
             "er mest sannsynlig å aldri være singel i mer enn 3 måneder?",
             "er mest sannsynlig å elske på en strand?",
             "er mest sannsynlig å handle på en forelskelse?",
-            "er mest sannsynlig å bli terrorist?",
             "er mest sannsynlig å bake en kake for en skoletur?",
             "er mest sannsynlig hjertesorg?",
             "er mest sannsynlig å være en gjerrig foreldre?",
