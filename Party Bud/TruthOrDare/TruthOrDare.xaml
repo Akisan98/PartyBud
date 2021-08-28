@@ -9,7 +9,7 @@
             <Label x:Name="overskrift" Text="Nødt eller Sannhet" FontSize="72" FontAttributes="Bold"  Padding="32, 8, 32, 16" TextColor="White" FontFamily="FunFont"/>
 
             <Grid VerticalOptions="StartAndExpand" Padding="24, 0, 24, 0">
-                <BoxView Color="#397B90" CornerRadius="24"></BoxView>
+                <ImageButton x:Name="MyImageButton" Source="card22.png" CornerRadius="16" Aspect="AspectFill" BackgroundColor="Transparent"/>
                 <Label x:Name="question_text" Text="Trykk på knappen under for å få opp en spørsmål eller still en selv" Padding="32" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
             </Grid>
 

@@ -22,6 +22,7 @@ namespace Party_Bud.TruthOrDare
         public TruthOrDare()
         {
             InitializeComponent();
+            MyImageButton.Source = "card22.png";
             setup();
         }
 

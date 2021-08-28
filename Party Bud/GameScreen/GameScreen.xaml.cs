@@ -30,6 +30,13 @@ namespace Party_Bud.GameScreen
             "Vil du heller"
         };
 
+        string[] backgroundImg = new string[] {
+            "card44.png",
+            "card11.png",
+            "card33.png",
+            // "card22.png"
+        };
+
         public GameScreen(int gameID)
         {
             this.gameID = gameID;
@@ -44,14 +51,17 @@ namespace Party_Bud.GameScreen
                 case 0:
                     var never = new NeverHaveIQuestionSet();
                     questions = never.Setup();
+                    MyImageButton.Source = backgroundImg[0];
                     break;
                 case 1:
                     var who = new WhoIsQuestionSet();
                     questions = who.Setup();
+                    MyImageButton.Source = backgroundImg[1];
                     break;
                 case 2:
                     var would = new WouldYouRatherQuestionSet();
                     questions = would.Setup();
+                    MyImageButton.Source = backgroundImg[2];
                     break;
             }
 

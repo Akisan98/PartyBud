@@ -5,27 +5,59 @@
              BackgroundColor="#404040">
 
     <ScrollView>
-        <StackLayout>
-            <Label HorizontalTextAlignment="Center" FontSize="110" FontAttributes="Bold"  Padding="16" TextColor="White" FontFamily="FunFont">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Party " TextColor="#397B90"/>
-                        <Span Text="Bud"/>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+        <ContentView>
+            <StackLayout>
+                <Label HorizontalTextAlignment="Center" FontSize="110" FontAttributes="Bold"  Padding="16" TextColor="White" FontFamily="FunFont">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Chin " TextColor="#397B90"/>
+                            <Span Text="Chin"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
 
-            <Grid VerticalOptions="StartAndExpand">
-                <Image Source="main.png" Aspect="AspectFit" />
-                <Label Text="En drikkelek for alle! En lek for enhver stemning!" Padding="16,0,16,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
-            </Grid>
+                <Grid VerticalOptions="StartAndExpand">
+                    <Image Source="main.png" Aspect="AspectFit" />
+                    <Label Text="En drikkelek for alle! En lek for enhver stemning!" Padding="16,0,16,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
+                </Grid>
 
-            <Button Margin="48, 92, 48, 8" Text="Jeg har aldri..." Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Open_Never_Have_I"></Button>
-            <Button Margin="48, 8, 48, 8" Text="Hvem i rommet" Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Open_Who_In_The_Room"></Button>
-            <Button Margin="48, 8, 48, 8" Text="Vil du heller?" Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Open_Would_You_Rather"></Button>
-            <Button Margin="48, 8, 48, 48" Text="Nøtt eller Sannhet" Padding="24" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Open_Truth_Or_Dare"></Button>
 
-        </StackLayout>
+                <Grid VerticalOptions="StartAndExpand" Margin="48, 92, 48, 8" BackgroundColor="Transparent">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Open_Never_Have_I"/>
+                    </Grid.GestureRecognizers>
+
+                    <ImageButton Source="card44.png" CornerRadius="16" Aspect="AspectFit" BackgroundColor="Transparent"/>
+                    <Label Text="Jeg har aldri..." Padding="16" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
+                </Grid>
+
+                <Grid VerticalOptions="StartAndExpand" Margin="48, 8, 48, 8" BackgroundColor="Transparent">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Open_Who_In_The_Room"/>
+                    </Grid.GestureRecognizers>
+
+                    <ImageButton Source="card11.png" CornerRadius="16" Aspect="AspectFit" BackgroundColor="Transparent"/>
+                    <Label Text="Hvem i rommet" Padding="16" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
+                </Grid>
+
+                <Grid VerticalOptions="StartAndExpand" Margin="48, 8, 48, 8" BackgroundColor="Transparent">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Open_Would_You_Rather"/>
+                    </Grid.GestureRecognizers>
+
+                    <ImageButton Source="card33.png" CornerRadius="16" Aspect="AspectFit" BackgroundColor="Transparent"/>
+                    <Label Text="Vil du heller?" Padding="16" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
+                </Grid>
+
+                <Grid VerticalOptions="StartAndExpand" Margin="48, 8, 48, 48" BackgroundColor="Transparent">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Open_Truth_Or_Dare"/>
+                    </Grid.GestureRecognizers>
+
+                    <ImageButton Source="card22.png" CornerRadius="16" Aspect="AspectFit" BackgroundColor="Transparent"/>
+                    <Label Text="Nøtt eller Sannhet" Padding="16" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
+                </Grid>
+            </StackLayout>
+        </ContentView>
     </ScrollView>
-
 </ContentPage>
