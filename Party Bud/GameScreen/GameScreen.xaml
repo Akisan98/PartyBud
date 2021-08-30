@@ -4,23 +4,19 @@
              x:Class="Party_Bud.GameScreen.GameScreen"
              Title="{Binding Title}"
              BackgroundColor="#404040">
-    <ContentPage.Content>
+    <ContentView>    
         <ScrollView>
+            <StackLayout>
+                <Label x:Name="GameName" Text="Jeg har aldri..." FontSize="72" FontAttributes="Bold"  Padding="32, 8, 32, 16" TextColor="White" FontFamily="FunFont"/>
 
-            <ContentView>
-                <StackLayout>
-                    <Label x:Name="GameName" Text="Jeg har aldri..." FontSize="72" FontAttributes="Bold"  Padding="32, 8, 32, 16" TextColor="White" FontFamily="FunFont"/>
+                <Grid VerticalOptions="StartAndExpand" Padding="24, 8, 24, 8">
+                    <ImageButton x:Name="MyImageButton" Source="card22.png" CornerRadius="16" Aspect="AspectFill" BackgroundColor="Transparent"/>
+                    <Label x:Name="question_text" Text="ønsket å bli astronaut." Padding="32" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="48" FontFamily="FunFont"/>
+                </Grid>
 
-                    <Grid VerticalOptions="StartAndExpand" Padding="24, 0, 24, 0">
-                        <ImageButton x:Name="MyImageButton" Source="card22.png" CornerRadius="16" Aspect="AspectFill" BackgroundColor="Transparent"/>
-                        <Label x:Name="question_text" Text="ønsket å bli astronaut." Padding="32" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="48" FontFamily="FunFont"/>
-                    </Grid>
+                <Button Margin="72, 16, 72, 32" Text="Neste" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Next_Question"></Button>
 
-                    <Button Margin="72, 16, 72, 32" Text="Neste" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#397B90" TextColor="White" Clicked="Next_Question"></Button>
-
-                </StackLayout>
-            </ContentView>
-        
+            </StackLayout>
         </ScrollView>
-    </ContentPage.Content>
+    </ContentView>
 </ContentPage>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="5" android:versionName="1.0.4" package="ml.akisan.party_bud" android:installLocation="preferExternal">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="6" android:versionName="1.0.5" package="ml.akisan.party_bud" android:installLocation="preferExternal">
 	<uses-sdk android:minSdkVersion="28" android:targetSdkVersion="30" />
 	<application android:label="Chin Chin" android:theme="@style/MainTheme" android:icon="@mipmap/ic_launcher" android:debuggable="false"></application>
 </manifest>

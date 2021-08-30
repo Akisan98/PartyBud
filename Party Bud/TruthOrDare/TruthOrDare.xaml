@@ -4,20 +4,25 @@
              x:Class="Party_Bud.TruthOrDare.TruthOrDare"
              Title="Nødt eller Sannhet"
              BackgroundColor="#404040">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="overskrift" Text="Nødt eller Sannhet" FontSize="72" FontAttributes="Bold"  Padding="32, 8, 32, 16" TextColor="White" FontFamily="FunFont"/>
 
-            <Grid VerticalOptions="StartAndExpand" Padding="24, 0, 24, 0">
-                <ImageButton x:Name="MyImageButton" Source="card22.png" CornerRadius="16" Aspect="AspectFill" BackgroundColor="Transparent"/>
-                <Label x:Name="question_text" Text="Trykk på knappen under for å få opp en spørsmål eller still en selv" Padding="32" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
-            </Grid>
+    <ContentView>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="overskrift" Text="Nødt eller Sannhet" FontSize="72" FontAttributes="Bold"  Padding="32, 8, 32, 16" TextColor="White" FontFamily="FunFont"/>
+
+                <Grid VerticalOptions="StartAndExpand" Padding="24, 0, 24, 0">
+                    <ImageButton x:Name="MyImageButton" Source="card22.png" CornerRadius="16" Aspect="AspectFill" BackgroundColor="Transparent"/>
+                    <Label x:Name="question_text" Text="Trykk på knappen under for å få opp en spørsmål eller still en selv" Padding="32" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="FunFont"/>
+                </Grid>
 
             
-            <Grid>
-                <Button Grid.Column="0" Margin="16" Text="Nødt" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#AC6700" TextColor="White" Clicked="DareQuestion"></Button>
-                <Button Grid.Column="1" Margin="16" Text="Sannhet" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#05B25F" TextColor="White" Clicked="TruthQuestion"></Button>
-            </Grid>
-        </StackLayout>
-    </ContentPage.Content>
+                <Grid>
+                    <Button Grid.Column="0" Margin="16" Text="Nødt" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#AC6700" TextColor="White" Clicked="DareQuestion"></Button>
+                    <Button Grid.Column="1" Margin="16" Text="Sannhet" Padding="16" CornerRadius="8" FontSize="24" FontAttributes="Bold" BackgroundColor="#05B25F" TextColor="White" Clicked="TruthQuestion"></Button>
+                </Grid>
+       
+            </StackLayout>
+        
+        </ScrollView>
+    </ContentView>
 </ContentPage>
